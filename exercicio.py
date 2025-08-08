@@ -47,3 +47,11 @@
 # nu5=float (input("Digite um número: "))
 # soma= nu1+nu2+nu3+nu4+nu5
 # print(f"a soma é: {soma}")
+
+# QUESTÃO 7 
+
+# n = 1
+# while n  <= 10 : 
+#     print(f"número : {n}")
+#     n += 2 
+#     continue
