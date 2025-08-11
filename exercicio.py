@@ -55,3 +55,20 @@
 #     print(f"número : {n}")
 #     n += 2 
 #     continue
+
+# QUESTÃO 8
+
+# contador = 0
+# while True:
+#     numero = int(input("Digite um número : "))
+#     if numero == 0:
+#         break
+#     contador += 1
+# print(f"Foram digitados {contador} números.")
+
+# QUESTÃO 9
+
+# n = int(input("Digite um número para ver a tabuada: "))
+# print(f"Tabuada do {n}:")
+# for i in range(1, 11):
+#     print(f"{n} x {i} = {n * i}")
