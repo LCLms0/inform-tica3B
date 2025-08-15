@@ -20,3 +20,13 @@
 #         contador += 1 
 #         continue
 
+# QUESTÃO 3 
+
+# número= float(input("digite um número e lhe direi se ele é par ou impar: "))
+# if  número % 2 :
+#     print(f"{número} é impar ")
+# else : 
+#     print(f" {número} é par")
+
+# QUESTÃO 4
+
