@@ -30,3 +30,11 @@
 
 # QUESTÃO 4
 
+# numeros=[]
+# for i in range(1,6) :
+#     numeros.append(int(input(f"Digite o {i}° número: ")))
+# if numeros:
+#     mai=max(numeros)
+#     men=min(numeros)
+#     print(f"Maior valor é: {mai}")
+#     print(f"Menor valor é: {men}")
