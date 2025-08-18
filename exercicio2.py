@@ -1,8 +1,10 @@
 # QUESTÃO 1 
 
+# somafinal= 0
 # for i in range (1 , 4 ) :
-#     nota= float(input('Digite sua nota:  ') )
-# media= (nota+nota+nota) / 3 
+#     numero=float(input('Digite sua nota:  ') )  
+#     somafinal += (numero)
+# media= (somafinal)  / 3
 # print(f"Sua média é : {media}  ")
 # if media  < 7 :
 #     print("você está reprovado !")
@@ -38,3 +40,29 @@
 #     men=min(numeros)
 #     print(f"Maior valor é: {mai}")
 #     print(f"Menor valor é: {men}")
+
+# QUESTÃO 5
+
+#total = 0               
+#mais_de_100 = 0        
+#while True:
+#    preço = float(input("Digite o valor do produto (0 para encerrar): "))
+#    if preço == 0:
+#        break 
+#    total += preço    
+
+  #  if preço > 100:
+   #     mais_de_100 += 1
+#print("Total da compra: R$", total)
+#print("Produtos acima de R$100:", mais_de_100)
+
+
+# QUESTÃO 6
+
+# n = float(input("Digite um número: "))
+# fatorial = 1
+# i = 1
+# while i <= n:
+#    fatorial *= i
+#    i += 1
+# print(f"O fatorial de {n} é {fatorial}")
