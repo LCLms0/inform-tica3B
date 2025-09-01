@@ -31,11 +31,30 @@
 
 # QUESTÃO 4
 
-n = float(input("Digite um número e lhe direi se ele é primo ou não:  "))
-for i in range(2, int((n))):
-    if n / i == 0 :    
-        print(f"{n} não é Primo")    
-    else:
-        print(f"{n} é Primo!")
+# n = int(input("Digite um número e lhe direi se ele é primo ou não:  "))
+# eh_primo = True
+# for i in range(2,n):
+#     if n % i == 0:
+#         eh_primo = False 
+# if eh_primo:
+#     print(f'{n} é primo') 
+# else:
+#     print(f"{n} não é primo")        
 
-    
+# QUESTÃO 5
+
+# alunosquepassaram=0
+# alunosquenãopassaram=0
+# somanotas=0
+# alunos=int(input("digite a quantidade de alunos: "))
+# for aluno in range(0,alunos) :
+#     nota=float(input("digite a nota do aluno: "))
+#     somanotas + nota
+#     if nota <= 6 :
+#         alunosquenãopassaram += 1
+#     if nota > 6 :
+#         alunosquepassaram +=1
+# media= somanotas / alunos
+# print(f" media da turma foi: {media}")
+# print(f"a quantidade que passou foi {alunosquepassaram}")
+# print(f"a quantidade que não passou foi {alunosquenãopassaram}")
