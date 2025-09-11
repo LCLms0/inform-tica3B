@@ -86,5 +86,50 @@
 # QUESTÃO 9
 
 
+# QUESTÃO 10
 
+# eh_par = 0
+# n = int(input("digite um número e lhe direi a soma de todos os pares até ele:  "))
+# for i in range(n + 1):
+#     if i % 2 == 0:
+#         eh_par += i
+# print(f"a soma dos números é: {eh_par}")    
+
+# QUESTÃO 11 
+
+
+# def adição(a,b):
+#     a=float(input("Digite o valor do primeiro número da soma: "))
+#     b=float(input("Digite o valor do segundo número da soma: "))
+#     soma = (a+b)
+#     return print(f"a soma é {soma}")
+
+# def subtração(a,b):
+#     a=float(input("Digite o valor do primeiro número da subtração: "))
+#     b=float(input("Digite o valor do segundo número da subtração: "))
+#     sub = (a-b)
+#     return print(f"a subtração é {sub}")
+
+# def multiplicação(a,b):
+#     a=float(input("Digite o valor do primeiro número da multiplicação: "))
+#     b=float(input("Digite o valor do segundo número da multiplicação: "))
+#     multi = (a*b)
+#     return print(f"a multiplicação é {multi}")
+
+# def divisão(a,b):
+#     a=float(input("Digite o valor do primeiro número da divisão: "))
+#     b=float(input("Digite o valor do segundo número da divisão: "))
+#     div = (a/b)
+#     return print(f"a divisão é {div}")
+
+# print("Bem vindo a calculadora!")
+# operação= input("Digite a operação desejada entre [+] [-] [*] [/]: ")
+# if operação == "+" :
+#     adição(a=0,b=0)
+# if operação == "-" :
+#     subtração(a=0,b=0)
+# if operação == "*" :
+#     multiplicação(a=0,b=0)
+# if operação == "/" :
+#     divisão(a=0,b=0)
 
