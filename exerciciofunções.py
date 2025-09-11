@@ -97,7 +97,6 @@
 
 # QUESTÃO 11 
 
-
 # def adição(a,b):
 #     a=float(input("Digite o valor do primeiro número da soma: "))
 #     b=float(input("Digite o valor do segundo número da soma: "))
@@ -122,14 +121,36 @@
 #     div = (a/b)
 #     return print(f"a divisão é {div}")
 
-# print("Bem vindo a calculadora!")
-# operação= input("Digite a operação desejada entre [+] [-] [*] [/]: ")
-# if operação == "+" :
-#     adição(a=0,b=0)
-# if operação == "-" :
-#     subtração(a=0,b=0)
-# if operação == "*" :
-#     multiplicação(a=0,b=0)
-# if operação == "/" :
-#     divisão(a=0,b=0)
+# def calculadora():
+#     entrada=input("Deseja entrar na calculadora ? se sim, digite [E]:   ")
+#     if entrada == "E":
+#         print("Bem vindo a calculadora!")
+#         operação= input("Digite a operação desejada entre [+] [-] [*] [/]: ")
+#         if operação == "+" :
+#             adição(a=0,b=0)
+#         if operação == "-" :
+#             subtração(a=0,b=0)
+#         if operação == "*" :
+#             multiplicação(a=0,b=0)
+#         if operação == "/" :
+#             divisão(a=0,b=0)
+
+# calculadora()
+
+# QUESTÃO 12
+
+# def primo():
+#     n = int(input("Digite um número e lhe direi se ele é primo ou não:  "))
+#     eh_primo = True
+#     for i in range(2,n):
+#         if n % i == 0:
+#             eh_primo = False 
+#     if eh_primo:
+#         print(f'{n} é primo') 
+#     else:
+#         print(f"{n} não é primo")    
+
+# primo()
+
+# QUESTÃO 13 
 
