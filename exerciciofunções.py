@@ -154,3 +154,8 @@
 
 # QUESTÃO 13 
 
+# def inverter():
+#     palavra=input("digite qualquer coisa:  ")
+#     string_invertida = palavra[::-1]
+#     print(f"{string_invertida}")
+# inverter()
