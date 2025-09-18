@@ -159,3 +159,30 @@
 #     string_invertida = palavra[::-1]
 #     print(f"{string_invertida}")
 # inverter()
+
+
+# QUESTÃO 14
+
+# eh_par = 0
+# eh_impar = 0
+# n = 0
+# while n <=9 :
+#     numero=int(input("digite o 1 número:  "))
+#     n += 1
+#     if numero % 2==0 :
+#         eh_par += 1
+#     else:
+#         eh_impar += 1
+# print(f"Existem {eh_par} de números pares e {eh_impar} de números impares")
+
+# QUESTÃO 15
+
+def fibonacci(n):
+    sequencia = []
+    for i in range(n):
+        num = (i-1) + (i-2)
+        sequencia.append(num)
+    return print(sequencia)
+
+n = int(input("digite até onde vai ser fibonacci:  "))
+fibonacci(n)
