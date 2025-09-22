@@ -177,12 +177,14 @@
 
 # QUESTÃO 15
 
-def fibonacci(n):
-    sequencia = []
-    for i in range(n):
-        num = (i-1) + (i-2)
-        sequencia.append(num)
-    return print(sequencia)
+# def fibonnacci(n):
+#     a = 0
+#     b = 1
+#     sequencia = []
+#     while a < n:
+#         sequencia.append(a)
+#         a,b = b, a+b
+#     print(sequencia)
 
-n = int(input("digite até onde vai ser fibonacci:  "))
-fibonacci(n)
+# fibonnacci(n = int(input("digite até onde vai a sequencia de fibonnaci:  ")))
+
