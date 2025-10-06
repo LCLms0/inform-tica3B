@@ -1,16 +1,16 @@
 #1
 
-# nomes=[]
-# contador=0
+# lista=[]
+# listaA=[]
+# a=["a" , "A"]
 # for i in range(1,6):
-#     name=input(f"Digite um nome {i}: ")
-#     nomes.append(name)
-# print(nomes)
-
-# inicial=[letra[0] for letra in nomes ]
-# if i
-#     contador +=1
-# print(f"O total de iniciais é: {contador}")
+#     nome=input(f"Digite o nome: ")
+#     lista.append(nome)
+# for i in lista:
+#         if i in a:
+#             listaA.append(i)
+# print(f"todos os nomes digitados:{lista}")
+# print(f"todos os nomes que contém as letras Aa:{listaA}")
 
 #2
 
@@ -102,3 +102,18 @@
 #     print("Convidado confirmado!")
 # else:
 #     print("Convidado não encontrado!")
+
+#8
+
+# soma=0
+# media= 0
+# l=[]
+# for i in range(1,7):
+#     n= float(input("Digite o número: "))
+#     l.append(n)
+# for i in l:
+#     i += soma
+# soma / 6 += media
+# print(f"as notas são: {l}")
+# print(f"a média foi {media}")
+# ta erradp
