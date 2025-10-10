@@ -105,15 +105,29 @@
 
 #8
 
-# soma=0
-# media= 0
+# soma = 0
 # l=[]
+# l2=[]
 # for i in range(1,7):
 #     n= float(input("Digite o número: "))
 #     l.append(n)
 # for i in l:
-#     i += soma
-# soma / 6 += media
+#     soma += i
+#     if i >= 6:
+#         l2.append(i)
 # print(f"as notas são: {l}")
-# print(f"a média foi {media}")
-# ta erradp
+# print(f"a média foi {soma / i}")
+# print(f"as notas acima de 6 ou igual a seis são: {l2}")
+
+#9
+
+# carrinho=[]
+# for i in range(1,6):
+#     produto=input(f"Adicione um produto {i}: ")
+#     carrinho.append(produto)
+# print(f"{carrinho}")
+
+# remover=input("Deseja remover qual produto? ")
+# if remover in carrinho:
+#     carrinho.remove(remover)
+#     print(f"Lista autoalizada: {carrinho}")
