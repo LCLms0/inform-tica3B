@@ -131,3 +131,16 @@
 # if remover in carrinho:
 #     carrinho.remove(remover)
 #     print(f"Lista autoalizada: {carrinho}")
+
+#10
+
+# nomes=[]
+# for i in range(1,8):
+#     n=input(f"Digite o {i}° nome: ")
+#     nomes.append(n)
+
+# def filtrar_nomes(nomes):
+#     nomes_filtrados = [nome for nome in nomes if len(nome) > 5]
+#     print(f"{nomes_filtrados}")
+
+# filtrar_nomes(nomes)
