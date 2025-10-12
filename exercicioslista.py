@@ -144,3 +144,4 @@
 #     print(f"{nomes_filtrados}")
 
 # filtrar_nomes(nomes)
+
