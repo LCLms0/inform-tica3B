@@ -62,26 +62,19 @@
 # QUESTÃO 6
 
 # import random
-# print("BEM VINDO AO JOGO DE ADIVINHAÇÕES!") 
-# print("REGRAS: 1 - TENTE ADIVINHAR O NÚMERO SECRETO")
-# n_aleatorio = 0 
-# pontuação = 0
-# for n in range(1 , 20):
-#     n_aleatorio=int(random.Random())
-#     n_usuario= int(input("Tente adivinhar o número:  "))
-#     if n_usuario < n_aleatorio :
-#         print("quase lá...tente novamente mas com um número menor.")
+# i = 1
+# numero_aleatorio = random.randint(1, 20)
+# print("BEM VINDO(A) AO JOGO DE ADIVINHAÇÕES!")
+# while True:
+#     n = int(input(f"{i} Tentativa:  "))
+#     if n > numero_aleatorio:
+#         print("Digite um número menor!")
+#         i += 1
 #         continue
-#     if n_usuario > n_aleatorio :
-#         print("quase lá...tente novamente mas com um número maior.")
+#     if n < numero_aleatorio:
+#         print("Digite um número maior!")
+#         i += 1 
 #         continue
-#     if n_usuario == n_aleatorio :
-#         print("você acertou!!! Ganhou + 100 de pontuação ! (digite 0 para parar)")
-#         pontuação += 100
-#         continue
-#     if n_aleatorio == 0 :
+#     if n == numero_aleatorio:
+#         print("Você Acertou!")
 #         break
-# import time
-# print(f"Sua Pontuação Final foi...")
-# time.sleep(3)
-# print(f"{pontuação}!!!") 
