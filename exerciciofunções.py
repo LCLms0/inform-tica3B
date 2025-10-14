@@ -85,6 +85,25 @@
 
 # QUESTÃO 9
 
+# import random
+# i = 1
+# numero_aleatorio = random.randint(1, 20)
+# print("BEM VINDO(A) AO JOGO DE ADIVINHAÇÕES!")
+# while True:
+#     n = int(input(f"{i} Tentativa:  "))
+#     if n > numero_aleatorio:
+#         print("Digite um número menor!")
+#         i += 1
+#         continue
+#     if n < numero_aleatorio:
+#         print("Digite um número maior!")
+#         i += 1 
+#         continue
+#     if n == numero_aleatorio:
+#         print("Você Acertou!")
+#         break
+
+
 
 # QUESTÃO 10
 
