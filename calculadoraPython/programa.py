@@ -2,7 +2,7 @@ from operacoes import *
 from color50 import rgb, constants
 import emoji
 roxo = rgb(128, 0, 128)
-print(emoji.emojize("-----------:alien_monster: BEM VINDO A CALCULADORA PYTHON:alien_monster: -----------"))
+print(emoji.emojize("-----------:alien_monster: BEM VINDO A CALCULADORA PYTHON :alien_monster: -----------"))
 print("Você tem as seguintes operações disponiveis:  ")
 print("Adição, Subtração, Multiplicação e Divisão.")
 print("Comandos: ")
