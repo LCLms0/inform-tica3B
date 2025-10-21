@@ -6,4 +6,7 @@ for e in range(quan):
     alunos.append(aluno)
     for i in range(4-1):
             nota = input(f"Digite a {i+1}° Nota:  ")
-            alunos.append(notas)
+            notas.append(nota)
+
+print(f"{alunos}")
+print(f"{notas}")
