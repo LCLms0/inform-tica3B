@@ -1,12 +1,20 @@
-alunos = []
-notas  = []
-quan = int(input("Digite a quantidade de alunos que deseja cadastrar:  "))
-for e in range(quan):
-    aluno = input(f"Digite o Nome do {e+1}° Aluno:  ")
-    alunos.append(aluno)
-    for i in range(4-1):
-            nota = input(f"Digite a {i+1}° Nota:  ")
-            notas.append(nota)
+print("MENU")
+print("1 - cadastrar aluno")
+print("2 - exibir relatorio")
+print("0 - sair")
+listaAlunos = []
 
-print(f"{alunos}")
-print(f"{notas}")
+while True:
+    comando = int(input("Digite o comando:  "))
+    if comando == 1:
+        aluno = input("Digite o nome do aluno:  ")
+        nota1= float(input("Nota 1"))
+        nota2= float(input("Nota 1"))
+        nota3= float(input("Nota 1"))
+        dicionario = {aluno:[nota1,nota2,nota3]}
+        listaAlunos.append(dicionario)
+    if comando == 2:
+        print(listaAlunos)
+        
+    if comando == 0:
+        break
