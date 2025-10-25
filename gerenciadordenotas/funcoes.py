@@ -5,9 +5,9 @@ def calcular_media(listanotas):
 
 def verificar_situacao(media):
     if media >= 7:
-        print("aprovado")
+        return("aprovado")
     if media < 5 <= 6.9 :
-        print("recuperação")
+        return("recuperação")
     if media < 5:
-        print("Reprovado")
-
+        return("Reprovado")
+    return verificar_situacao

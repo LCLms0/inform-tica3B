@@ -1,4 +1,5 @@
 from funcoes import *
+from tabulate import tabulate
 
 print("MENU")
 print("1 - cadastrar aluno")
@@ -19,7 +20,7 @@ while True:
         listanotas.append(nota3)
         media = calcular_media(listanotas)
         situação = verificar_situacao(media)
-        dicionario = {aluno:[nota1,nota2,nota3,media,situação]}
+        dicionario = {aluno:[nota1,nota2,nota3]}
         listaAlunos.append(dicionario)
     if comando == 2:
         print(listaAlunos)
