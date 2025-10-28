@@ -1,14 +1,20 @@
 from funcoes import *
 from tabulate import tabulate
 
-print("MENU")
-print("1 - cadastrar aluno")
-print("2 - exibir relatorio")
-print("0 - sair")
+print("Bem vindo ao gerenciador de notas python!")
+print("Comandos: ")
+print("-----------------------")
+print("[1] -> cadastrar aluno ")
+print("-----------------------")
+print("[2] -> exibir relatorio ")
+print("-----------------------")
+print("[0] -> sair")
+print("-----------------------")
 
-listaAlunos = []
-listanotas = []
-while True:
+
+Listaalunos = []
+while True:    
+    listanotas = []
     comando = int(input("Digite o comando:  "))
     if comando == 1:
         aluno = input("Digite o nome do aluno:  ")
@@ -18,13 +24,21 @@ while True:
         listanotas.append(nota1)
         listanotas.append(nota2)
         listanotas.append(nota3)
+
         media = calcular_media(listanotas)
         situação = verificar_situacao(media)
-        dicionario = {aluno:[nota1,nota2,nota3]}
-        listaAlunos.append(dicionario)
+        dict = {
+            "Aluno": aluno,
+            "Notas": {
+                "nota 1":nota1,
+                "nota 2":nota2,
+                "nota 3":nota3,
+            }, 
+            "Média": media,
+            "Situação": situação
+        }
+        Listaalunos.append(dict)
     if comando == 2:
-        print(listaAlunos)
-        print(calcular_media(listanotas))
-        print(verificar_situacao(media))
+        print(tabulate(Listaalunos, headers='keys'))
     if comando == 0:
         break
