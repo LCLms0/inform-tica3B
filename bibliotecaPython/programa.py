@@ -13,17 +13,19 @@ print("-----------------------")
 print("[0] -> sair")
 print("-----------------------")
 
-dict =  { "titulo": [titulo], "autor": [autor], "status": "disponível"}
+lista = []
 
 while True:
     comando = int(input("Digite o Comando:  "))
     if comando == 1:
-        print(adicionar_livro)  
+        adicionar_livro()
     if comando == 2:
-        print(exibir_livros)   
+        exibir_livros()
     if comando == 3:
-        print(emprestar_livro) 
+        emprestar_livro()
     if comando == 4:
-        print(devolver_livro) 
+        devolver_livro()
     if comando == 0:
         break
+    else:
+        print("Tente novamente")

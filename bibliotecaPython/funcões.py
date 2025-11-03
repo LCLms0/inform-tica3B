@@ -1,19 +1,21 @@
-from programa import *
 
-Titulo =  None
-Autor = None
-Status = None
-
-def adicionar_livro(listaLivros):
-        titulo = input("Digte o Titúlo Deste Livro:  ")
+def adicionar_livro(lista):
+        titulo = input("Digite o Titúlo Deste Livro:  ")
         autor = input("Digte o Titúlo Deste Livro:  ")
-        status = ("Disponivél")
+        livro = {
+             "titulo" : titulo , "autor" : autor , "status" : "Disponivél"
+        }
+        lista.append(livro)
 
-def emprestar_livro(listaLivros):    
+def emprestar_livro(lista):    
     Status = ("emprestado")
+    Status.append(lista)
 
-def  devolver_livro(listaLivros):
+def  devolver_livro(lista):
     Status = ("Disponivél")
+    Status.append(lista)
 
-def exibir_livros(listaLivros):
-    print(dict)
+def exibir_livros(lista):
+    print(lista)
+    
+
