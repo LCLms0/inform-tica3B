@@ -9,7 +9,7 @@ def adicionar_livro(listaLivros):
         "status": "disponível"
     }
     listaLivros.append(livro)
-    print(f"\n✅ Livro '{titulo}' adicionado com sucesso!\n")
+    print(f"Livro '{titulo}' adicionado com sucesso!")
 
 def emprestar_livro(listaLivros):
     titulo = input("Digite o título do livro a ser emprestado: ").strip()
@@ -17,12 +17,12 @@ def emprestar_livro(listaLivros):
         if livro["titulo"].lower() == titulo.lower():
             if livro["status"] == "disponível":
                 livro["status"] = "emprestado"
-                print(f"\n📕 O livro '{titulo}' foi emprestado!\n")
+                print(f"O livro '{titulo}' foi emprestado!")
                 return
             else:
-                print(f"\n⚠️ O livro '{titulo}' já está emprestado!\n")
+                print(f"O livro '{titulo}' já está emprestado!")
                 return
-    print(f"\n❌ Livro '{titulo}' não encontrado.\n")
+    print(f"Livro '{titulo}' não encontrado.")
 
 def devolver_livro(listaLivros):
     titulo = input("Digite o título do livro a ser devolvido: ").strip()
@@ -30,16 +30,16 @@ def devolver_livro(listaLivros):
         if livro["titulo"].lower() == titulo.lower():
             if livro["status"] == "emprestado":
                 livro["status"] = "disponível"
-                print(f"\n📗 O livro '{titulo}' foi devolvido!\n")
+                print(f"O livro '{titulo}' foi devolvido!")
                 return
             else:
-                print(f"\n⚠️ O livro '{titulo}' já está disponível!\n")
+                print(f"O livro '{titulo}' já está disponível!")
                 return
-    print(f"\n❌ Livro '{titulo}' não encontrado.\n")
+    print(f"Livro '{titulo}' não encontrado.")
 
 def exibir_livros(listaLivros):
     if not listaLivros:
-        print("\n📚 Nenhum livro cadastrado.\n")
+        print("Nenhum livro cadastrado.")
         return
 
     tabela = [[livro["titulo"], livro["autor"], livro["status"]] for livro in listaLivros]

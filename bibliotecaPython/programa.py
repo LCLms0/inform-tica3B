@@ -1,15 +1,19 @@
-from funcões import adicionar_livro, emprestar_livro, devolver_livro, exibir_livros
+from funcões import *
 
 def menu():
-    print("=" * 40)
-    print("📚  SISTEMA DE BIBLIOTECA  📚".center(40))
-    print("=" * 40)
+    print("---------------------------------")
+    print("SISTEMA DE BIBLIOTECA")
+    print("---------------------------------")
     print("1 - Adicionar livro")
+    print("---------------------------------")
     print("2 - Exibir todos os livros")
+    print("---------------------------------")
     print("3 - Emprestar livro")
+    print("---------------------------------")
     print("4 - Devolver livro")
+    print("---------------------------------")
     print("0 - Sair")
-    print("=" * 40)
+    print("---------------------------------")
 
 def main():
     listaLivros = []
@@ -27,11 +31,9 @@ def main():
         elif opcao == "4":
             devolver_livro(listaLivros)
         elif opcao == "0":
-            print("\n👋 Encerrando o programa... Até mais!\n")
             break
         else:
-            print("\n⚠️ Opção inválida! Tente novamente.\n")
+            print("Opção inválida! Tente novamente.")
 
-if __name__ == "__main__":
-    main()
+main()
 
