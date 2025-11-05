@@ -10,7 +10,7 @@ print("0 - Sair")
 def menu():
 
     listaViagens = []
-
+    listacom = []
 
     while True:
         comando = int(input("Digite o comando:  "))
