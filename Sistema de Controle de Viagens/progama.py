@@ -1,31 +1,48 @@
 from funções import *
 
-print("1 - Registrar nova viagem") 
-print("2 - Exibir todas as viagens")
-print("3 - Buscar viagens por motorista") 
-print("4 - Exibir viagem mais cara") 
-print("5 - Mostrar média geral de consumo") 
-print("0 - Sair")
-
 def menu():
+    print("---------------------------------")
+    print("[1] -> Registrar nova viagem") 
+    print("---------------------------------")
+    print("[2] -> Exibir todas as viagens")
+    print("---------------------------------")
+    print("[3] -> Buscar viagens por motorista") 
+    print("---------------------------------")
+    print("[4] -> Exibir viagem mais cara") 
+    print("---------------------------------")
+    print("[5] -> Mostrar média geral de consumo") 
+    print("---------------------------------")
+    print("[0] -> Sair")
+    print("---------------------------------")
 
     listaViagens = []
-    listacom = []
+    lista2 = []
+    lista3 = []
 
     while True:
-        comando = int(input("Digite o comando:  "))
-        if comando == 1:
-            registrar_viagem(listaViagens)
-        elif comando == 2:
-            exibir_viagens(listaViagens)
-        elif comando == 3:
-            buscar_motorista(listaViagens)
-        elif comando == 4:
-            exibir_viagens(listaViagens)
-        elif comando == 5:
-            media_consumo(listaViagens)
-        elif comando == 0:
-            break
 
+        try:
+            comando = int(input("Digite o comando:  "))
+
+        except ValueError:
+            print("Comando inválido! Tente novamente!")
+            continue  # volta pro início do while
+        
+        match comando:
+            case  1 :
+                registrar_viagem(listaViagens,lista2,lista3)
+            case 2 :
+                exibir_viagens(listaViagens)
+            case 3 :
+                buscar_motorista(listaViagens)
+            case 4 : 
+                viagem_mais_cara(lista2)
+            case 5 :
+                media_consumo(lista3)
+            case 0 :
+                break
+            case _ :
+                print("Comando Invalido! Tente Novamente!")
+                return
+            
 menu()
-    
