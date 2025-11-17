@@ -1,6 +1,7 @@
 from funcoes import *
 
 def menu():
+    
     print("------Canto do Palhano------")
 
     print("------Menu------")
@@ -11,12 +12,33 @@ def menu():
     print("[4] - Remover item")
     print("[0] - Finalizar")
 
+    cardapio = []
+    pedidos = []
+
+
     while True:
 
-        comando=int(input("Digite o comando: "))
-        if comando == 1:
-            exibir_cardapio()
+        try:
+            comando = int(input("Digite o comando:  "))
 
+        except ValueError:
+            print("Comando inválido! Tente novamente!")
+            continue  # volta pro início do while
+        
+        match comando:
+            case  1 :
+                carregar_cardapio(cardapio)
+            case 2 :
+                adicionar_pedido(cardapio, pedidos)
+            case 3 :
+                exibir_pedido(pedidos)
+            case 4 : 
+                remover_item(pedidos)
+            case 0 :
+                break
+            case _ :
+                print("Comando Invalido! Tente Novamente!")
+                return
 
 
 menu()
