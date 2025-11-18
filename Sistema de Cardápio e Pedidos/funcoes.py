@@ -15,9 +15,9 @@ def carregar_cardapio(cardapio):
     {"id": 8, "nome": "Empada (frango/palmito)", "preco": (6.00) },
     ]
     bebidas = [
-    {"id": 9, "nome": "Sucos", "preco": (5,00) },
-    {"id": 10, "nome": "Coca-cola", "preco": (10,00) },
-    {"id": 11, "nome": "Pepsi", "preco": (9,00) },
+    {"id": 9, "nome": "Sucos", "preco": (5.00) },
+    {"id": 10, "nome": "Coca-cola", "preco": (10.00) },
+    {"id": 11, "nome": "Pepsi", "preco": (9.00) },
     ]
     cardapio.append(salgados)
     cardapio.append(lanches)
@@ -31,14 +31,17 @@ def exibir_cardapio(cardapio):
 def adicionar_pedido(cardapio, pedidos):
     id = int(input("Digite o ID do pedido:  "))
     qtd = int(input(f"Digite a quantidade de {id}:  "))
-    soma = sum(cardapio(id)["preco"]) * qtd
+    for i in cardapio:
+        if i["id"] == id:
+            total = i * qtd
     pedindo =   {
     "item": "Hambúrguer",
     "qtd": qtd,
-    "total": soma,
+    "total": total,
     "ID" : id
     }
     pedidos.append(pedindo)
+
 
 def exibir_pedido(pedidos):
     print(pedidos)
