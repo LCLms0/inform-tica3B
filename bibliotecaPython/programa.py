@@ -33,7 +33,7 @@ def main():
         elif opcao == "0":
             break
         else:
-            print("Opção inválida! Tente novamente.")
+            print("Opção inválida! Faça novamente.")
 
 main()
 
