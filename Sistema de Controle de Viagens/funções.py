@@ -44,4 +44,5 @@ def viagem_mais_cara(listaViagens):
     
 
 def media_consumo(listaViagens):
+    print("A média geral de consumo")
     print(sum([viagem["consumo"] for viagem in listaViagens]) / len(listaViagens))
