@@ -11,7 +11,7 @@ def registrar_viagem(listaViagens):
         "motorista"           : nome,
         "destino"             : destino,
         "distancia"           : distancia, 
-        "Gasto de Combustivél": gasto_combustivel , 
+        "Gasto de Combustivél": gasto_combustivel, 
         "consumo"             : consumo }
 
     listaViagens.append(dic)
@@ -44,5 +44,5 @@ def viagem_mais_cara(listaViagens):
     
 
 def media_consumo(listaViagens):
-    print("A média geral de consumo")
+    print("A média geral de consumo: ")
     print(sum([viagem["consumo"] for viagem in listaViagens]) / len(listaViagens))

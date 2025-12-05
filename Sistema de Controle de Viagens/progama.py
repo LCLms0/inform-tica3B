@@ -40,7 +40,7 @@ def menu():
             case 0 :
                 break
             case _ :
-                print("Comando Invalido! Tente Novamente!")
+                print("Comando Invalido! Faça Novamente!")
                 return
             
 menu()
