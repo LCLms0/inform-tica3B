@@ -1,18 +1,19 @@
-import tabulate 
-from main import *
-
-def carregar_cardapio(cardapio) :
-    return cardapio
+def carregar_cardapio():
+    return [
+        {"id": 1, "nome": "Hambúrguer", "preco": 12.5},
+        {"id": 2, "nome": "Batata Frita", "preco": 7.0},
+        {"id": 3, "nome": "Refrigerante", "preco": 5.0}
+    ]
 
 def exibir_cardapio(cardapio):
-    print(tabulate(cardapio, headers="keys", tablefmt="fancy_grid"))
-
+    print("\n--- CARDÁPIO ---")
+    for item in cardapio:
+        print(item["id"], "-", item["nome"], "- R$", item["preco"])
 
 def buscar_item(cardapio, id_item):
-    id = int(input("Digite o id do pedido: "))
-    for i in cardapio:
-        for e in i:
-            if e == id:
-                id_itens.append(i)
-    return id_itens
+    for item in cardapio:
+        if item["id"] == id_item:
+            return item
+    return None
+
 
